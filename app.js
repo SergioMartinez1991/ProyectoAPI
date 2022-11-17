@@ -19,8 +19,8 @@ mongoose.connect(process.env.MONGOURI);
 
 app.use('/NutricionPersonal', require('./src/routes'));
 
-const PORT = 4001;
-app.listen(PORT, () => console.log("The server is Alive!!"))
+
+app.listen(process.env.PORT, () => console.log("The server is Alive!!"))
 
 app.get('/',(req, res) => res.send("Hola Mundo Sergio"))
 
