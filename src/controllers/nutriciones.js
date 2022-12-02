@@ -12,7 +12,7 @@ function crearReceta(req, res) {
 //READ
 function obtenerReceta(req, res) {
     Dieta.find()
-        .then(data => { res.status(200).send(data); })
+        .then (data => { res.status(200).send(data); })
 }
 //UPDATE
 function modificarReceta(req, res) {
